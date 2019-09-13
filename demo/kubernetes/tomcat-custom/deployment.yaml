@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: eu.gcr.io/fausto-lab/tomcat-simple-site:v17
+        image: eu.gcr.io/<project-id>/tomcat-static-site:v1
         ports:
         - containerPort: 8080
         volumeMounts:

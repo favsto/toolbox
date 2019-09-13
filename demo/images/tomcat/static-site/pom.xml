@@ -8,6 +8,6 @@
   <name>simple-site</name>
   <url>http://maven.apache.org</url>
   <build>
-    <finalName>simple-site</finalName>
+    <finalName>static-site</finalName>
   </build>
 </project>
