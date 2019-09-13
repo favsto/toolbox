@@ -9,9 +9,9 @@ EXPOSE 8080
 # setup application
 WORKDIR /usr/src/app
 
-COPY simple-site/package*.json ./
+COPY app/package*.json ./
 RUN npm install 
-COPY simple-site .
+COPY app .
 
 # command entrypoint
 CMD ["node", "index.js"]

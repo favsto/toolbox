@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: eu.gcr.io/fausto-lab/simple-node-site:v1
+        image: eu.gcr.io/<project-id>/file-node-site:v1
         ports:
         - containerPort: 8080
         volumeMounts:

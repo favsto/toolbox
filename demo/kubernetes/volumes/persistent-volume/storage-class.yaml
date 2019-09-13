@@ -7,10 +7,10 @@ parameters:
   type: pd-standard
 volumeBindingMode: WaitForFirstConsumer
 reclaimPolicy: Retain
-allowedTopologies:
-- matchLabelExpressions:
-  - key: failure-domain.beta.kubernetes.io/zone
-    values:
-    - europe-west1-b
-    - europe-west1-c
-    - europe-west1-d
+# allowedTopologies:
+# - matchLabelExpressions:
+#   - key: failure-domain.beta.kubernetes.io/zone
+#     values:
+#     - europe-west1-b
+#     - europe-west1-c
+#     - europe-west1-d
