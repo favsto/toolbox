@@ -32,5 +32,8 @@ cd example # or whatever example subfolder
 
 terraform init
 
+terraform plan
+
+terraform apply
 # ...follow the readme within each subfolder
 ```
