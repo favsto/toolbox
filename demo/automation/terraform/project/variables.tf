@@ -8,10 +8,16 @@ variable "project_name" {
   description = "The project Name you want to use"
 }
 
-variable "folder_id" {
-  description = "The folder ID where put the project into"
+variable "organization" {
+  description = "The GCP organization domain, example: 'example.org'"
 }
 
-variable "billing_account_id" {
-  description = "The Billing Account ID where put the project into"
+variable "folder_id" {
+  description = "The folder id where put the project into"
+  default = null
 }
+
+# variable "billing_account_id" {
+#   description = "The Billing Account ID where put the project into"
+#   default = null
+# }
