@@ -1,8 +1,3 @@
-# Configure the Google Cloud provider
-provider "google" {
-  credentials = "${file(var.service_account_path)}"
-}
-
 # retrieve data
 data "google_organization" "org" {
   domain = "${var.org_domain}"

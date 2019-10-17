@@ -67,5 +67,5 @@ terraform show
 
 ```bash
 # Warning: this will destroy everything you created before. You wont be able to undo it!
-terraform destroy -var-file="production.tfvars" -auto-approve
+terraform destroy -var-file="staging.tfvars" -auto-approve
 ```

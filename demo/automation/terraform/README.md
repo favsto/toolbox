@@ -29,7 +29,7 @@ If you don't like it you can [download the binary](https://www.terraform.io/down
 | Get Organization    | [link](./get-organization)    | Given an organization domain returns its data on GCP              |
 | Networks            | [link](./networks)            | Create 2 networks with some VMs, leveraging Terraform modules     |
 | Project             | [link](./project)             | WIP                                                               |
-| Web Server          | [link](./web-server)          | WIP                                                               |
+| Web Server          | [link](./web-server)          | A simple GCE webserver with a startup script hosted in GCS        |
 
 # Run code
 
