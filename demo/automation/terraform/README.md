@@ -2,14 +2,15 @@
 
 ## Reference guides
 
-* [Official HashiCorp website](https://www.terraform.io/docs/providers/google/index.html)
-* [Google Cloud Community](https://cloud.google.com/community/tutorials/managing-gcp-projects-with-terraform)
+-   [Official HashiCorp website](https://www.terraform.io/docs/providers/google/index.html)
+-   [Google Cloud Community](https://cloud.google.com/community/tutorials/managing-gcp-projects-with-terraform)
 
 ## Installation
 
 The way I love the most is via Docker:
+
 ```bash
-docker run -v <local_folder>/terraform:/software sethvargo/hashicorp-installer terraform 0.12.8
+docker run -v /terraform:/software sethvargo/hashicorp-installer terraform 0.12.8
 
 # consider adding it into your PATH
 
@@ -18,6 +19,17 @@ terraform -h
 ```
 
 If you don't like it you can [download the binary](https://www.terraform.io/downloads.html), copy it in a folder and use it. 
+
+# Examples and demos
+
+| name                | link                          | description                                                       |
+| :------------------ | :---------------------------- | :---------------------------------------------------------------- |
+| Bastion             | [link](./bastion)             | 2 networks with a Bastion Host, a private VM and a Cloud NAT      |
+| Generate Project ID | [link](./generate-project-id) | Generate a string with a random string valid for a GCP project ID |
+| Get Organization    | [link](./get-organization)    | Given an organization domain returns its data on GCP              |
+| Networks            | [link](./networks)            | Create 2 networks with some VMs, leveraging Terraform modules     |
+| Project             | [link](./project)             | WIP                                                               |
+| Web Server          | [link](./web-server)          | WIP                                                               |
 
 # Run code
 
@@ -28,12 +40,7 @@ Create a service-account.json file. [Reference guide](https://www.terraform.io/d
 ## Play
 
 ```bash
-cd example # or whatever example subfolder
+cd  # or whatever example subfolder
 
-terraform init
-
-terraform plan
-
-terraform apply
 # ...follow the readme within each subfolder
 ```
