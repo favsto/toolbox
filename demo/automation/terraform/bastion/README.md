@@ -8,10 +8,10 @@ Your solution will look like this diagram:
 
 ## Requirements
 
-1. Terraform installed on your machine
-4. Google Cloud SDK (`gcloud`) installed on your machine, authorized with your user
-2. a GCP project with an active Billing Account 
-3. enought IAM rights on the project for your user (in the worst case and demo only use Project Owner)
+1.  Terraform installed on your machine
+2.  Google Cloud SDK (`gcloud`) installed on your machine, authorized with your user
+3.  a GCP project with an active Billing Account 
+4.  enought IAM rights on the project for your user (in the worst case and demo only use Project Owner)
 
 ## 1. Preparation
 
@@ -21,13 +21,7 @@ Authorize `gcloud` to have a valid token useful for your terraform:
 gcloud auth application-default login
 # follow the steps via browser
 ```
-<!-- 
-Initialize your environment variables
 
-```bash
-# gather your project id and substitute it
-GCP_PROJECT=<put-your-id-here>
-``` -->
 
 
 ## 2. Build it
