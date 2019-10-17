@@ -56,7 +56,7 @@ terraform show
 Edit some stuffs on `.tf` files and then execute:
 
 ```bash
-# if you change somethig related to modules, re-initialize all providers
+# if you changed something related to modules, re-initialize all providers
 terraform init
 
 # see what will happen to your project, this will produce a state file called staging.out
