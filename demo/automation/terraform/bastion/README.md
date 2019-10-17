@@ -32,7 +32,7 @@ GCP_PROJECT=<put-your-id-here>
 
 ## 2. Build it
 
-Before starting, edit the file `staging.tfvars` with your project id, then prepare your workspace and apply as following. 
+Before starting, edit the file `staging.tfvars` with your preferred data, then prepare your workspace and apply as following. 
 
 ```bash
 # use a dedicated workspace
