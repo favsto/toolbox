@@ -3,5 +3,9 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+  <context-param>
+      <param-name>log4jConfiguration</param-name>
+      <param-value>dfghjkl.properties</param-value>
+  </context-param>
   <display-name>Archetype Created Web Application</display-name>
 </web-app>

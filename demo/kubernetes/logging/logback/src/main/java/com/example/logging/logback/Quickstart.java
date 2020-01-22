@@ -27,6 +27,16 @@ public class Quickstart {
 	public void run() {
 		logger.info("TestLogback: Logging INFO with java.util.logging");
 		logger.error("TestLogback: Logging ERROR with java.util.logging");
+		
+		Exception e = new Exception("test eccezione");
+		logger.error("TestLogback: Logging ERROR with java.util.logging", e);
+		
+		try {
+			int result = 2 / 0;
+		} catch (Exception e2) {
+			logger.error("TestLogback: it seems that I cannot divide by zero... ", e);
+		}
+		
 	}
 }
 // [END logging_logback_quickstart]

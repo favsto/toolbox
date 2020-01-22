@@ -34,3 +34,14 @@ spec:
           requests:
             memory: "100Mi"
             cpu: "100m"
+        volumeMounts:
+        - name: logback-configmap
+          mountPath: "/usr/local/tomcat/lib/logback.xml"
+          subPath: logback.xml
+      volumes:
+      - name: logback-configmap
+        configMap:
+          name: logback-config
+          items:
+          - key: logback.xml
+            path: logback.xml
